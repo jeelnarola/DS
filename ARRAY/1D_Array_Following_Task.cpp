@@ -5,8 +5,6 @@
 // input : num=10;
 // output : indexes :-> 2,3 AND indexes :-> 1,4
 
-
-
 #include<iostream>
 using namespace std;
 int main()
@@ -22,15 +20,15 @@ int main()
         cin >> arr[i];
     }
 
-    cout << "Enter Any Number :-->";
+    cout << endl << "Enter Any Number :-->";
     cin >> num;
 
-    cout << "!! Enter Number In Element Sum of Index !!" << endl;
+    cout << endl << "!! Enter Number In Element Sum of Index !!" << endl;
 
     for(i=0;i<size;i++){
         for(j=i+1;j<size;j++){
             if(arr[i]+arr[j]==num){
-                cout <<" First Index Of ["<< i <<"]="<< arr[i] <<"" << " Second Index Of [" << j <<"]="<< arr[j] <<" = "<< num<< endl;
+                cout << endl <<" First Index Of ["<< i <<"] = "<< arr[i] << "" << " Second Index Of [" << j <<"] = "<< arr[j] << " => "<< num << endl;
             }
         }
     }
